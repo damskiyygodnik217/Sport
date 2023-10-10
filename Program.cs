@@ -9,11 +9,11 @@ if (string.IsNullOrWhiteSpace(count))
 if (Convert.ToInt32(count) <= 0)
 {
     Console.WriteLine("Неверное количество спортсменов. Повторите попытку.");
-    goto point;
+    point2:
 }
 Console.Clear();
 Dictionary<string, float> person = new Dictionary<string, float>();
-point2:
+goto point;
 for (int i = 0; i < int.Parse(count); i++)
 {
     Console.Write("Введите ФИО спортсмена: ");
